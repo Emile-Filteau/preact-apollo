@@ -640,7 +640,7 @@ class ObservableQueryRecycler {
     subscription.unsubscribe();
 
     // pull off options that are react-apollo specific
-    const { ssr, skip, ...modifiableWatchQueryOpts } = options; 
+    const { ssr, skip, ...modifiableWatchQueryOpts } = options;
 
     // When we reuse an `ObservableQuery` then the document and component
     // GraphQL display name should be the same. Only the options may be
