@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'preact-compat';
 import * as PropTypes from 'prop-types';
-import { Component } from 'react';
+import { render, h, Component } from 'preact';
 
 import { Store } from 'redux';
 

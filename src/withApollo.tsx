@@ -1,9 +1,10 @@
 import {
-  Component,
   createElement,
   ComponentClass,
   StatelessComponent,
-} from 'react';
+} from 'preact-compat';
+
+import { Component } from 'preact';
 import * as PropTypes from 'prop-types';
 
 const invariant = require('invariant');

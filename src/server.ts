@@ -3,8 +3,9 @@ import {
   ReactElement,
   ComponentClass,
   StatelessComponent,
-} from 'react';
-import * as ReactDOM from 'react-dom/server';
+  renderToString,
+} from 'preact-compat';
+
 import ApolloClient, { ApolloQueryResult } from 'apollo-client';
 const assign = require('object-assign');
 
@@ -170,9 +171,7 @@ export function getDataFromTree(
 export function renderToStringWithData(
   component: ReactElement<any>,
 ): Promise<string> {
-  return getDataFromTree(component).then(() =>
-    ReactDOM.renderToString(component),
-  );
+  return getDataFromTree(component).then(() => renderToString(component));
 }
 
 export function cleanupApolloState(apolloState) {
