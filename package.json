@@ -1,7 +1,7 @@
 {
-  "name": "react-apollo",
-  "version": "1.4.3",
-  "description": "React data container for Apollo Client",
+  "name": "preact-apollo",
+  "version": "0.0.1",
+  "description": "Preact data container for Apollo Client (forked from https://github.com/apollographql/react-apollo)",
   "main": "lib/react-apollo.umd.js",
   "module": "./lib/index.js",
   "jsnext:main": "./lib/index.js",
